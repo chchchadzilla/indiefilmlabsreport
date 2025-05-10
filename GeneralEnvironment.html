@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indie Film Lab: Adapting to Digital Disruption</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+        .film-strip {
+            background-image: url('data:image/svg+xml;utf8,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="100" fill="black" opacity="0.1"/></svg>');
+            background-size: 50px 100%;
+        }
+        .polaroid {
+            background: white;
+            padding: 15px 15px 60px 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transform: rotate(-2deg);
+            transition: transform 0.3s ease;
+        }
+        .polaroid:hover {
+            transform: rotate(0deg) scale(1.05);
+        }
+        .timeline-marker {
+            position: relative;
+        }
+        .timeline-marker::after {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #4F46E5;
+        }
+        @media (max-width: 768px) {
+            .timeline-marker::after {
+                left: -15px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800 film-strip">
+    <div class="container mx-auto px-4 py-12 max-w-6xl">
+        <!-- Header -->
+        <header class="mb-16 text-center">
+            <div class="inline-block px-4 py-2 bg-indigo-600 rounded-full mb-4">
+                <span class="text-white text-sm font-medium">CASE STUDY ANALYSIS</span>
+            </div>
+            <h1 class="text-4xl font-bold text-gray-900 mb-3">Indie Film Lab's <span class="text-indigo-600">Adaptation to Digital Shifts</span></h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">A strategic analysis of niche survival in the face of technological disruption</p>
+        </header>
+
+        <!-- Key Stats -->
+        <section class="mb-20">
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm animate-fade-in" style="animation-delay: 0.1s">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-camera-retro text-3xl" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Founded</h3>
+                    <p class="text-4xl font-bold mb-2">2011</p>
+                    <p class="text-gray-500 text-sm">At the height of digital camera adoption</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm animate-fade-in" style="animation-delay: 0.3s">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-tint text-3xl" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Film Processed</h3>
+                    <p class="text-4xl font-bold mb-2">500K+</p>
+                    <p class="text-gray-500 text-sm">Rolls since inception</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm animate-fade-in" style="animation-delay: 0.5s">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-users text-3xl" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Community</h3>
+                    <p class="text-4xl font-bold mb-2">25K+</p>
+                    <p class="text-gray-500 text-sm">Dedicated analog photographers served</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Environmental Change Visualization -->
+        <section class="mb-20 bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+            <div class="p-8 md:p-12">
+                <div class="flex flex-col lg:flex-row items-center">
+                    <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">The Digital Disruption Timeline</h2>
+                        <p class="text-gray-600 mb-6">How technological changes in the general environment transformed photography:</p>
+                        
+                        <div class="space-y-6">
+                            <div class="timeline-marker pl-6">
+                                <h3 class="font-semibold text-gray-800 mb-1">Late 1990s</h3>
+                                <p class="text-gray-600">Early digital cameras emerge, offering convenience but poor quality compared to film</p>
+                            </div>
+                            <div class="timeline-marker pl-6">
+                                <h3 class="font-semibold text-gray-800 mb-1">Mid 2000s</h3>
+                                <p class="text-gray-600">Digital cameras improve, becoming mainstream with DSLRs and compact cameras</p>
+                            </div>
+                            <div class="timeline-marker pl-6">
+                                <h3 class="font-semibold text-gray-800 mb-1">2010s</h3>
+                                <p class="text-gray-600">Smartphone cameras dominate, making digital photography ubiquitous</p>
+                            </div>
+                            <div class="bg-indigo-50 rounded-lg p-4 mt-6">
+                                <h3 class="font-semibold text-indigo-800 mb-2">Indie Film Lab's Position</h3>
+                                <p class="text-indigo-700">Founded in 2011, they entered a market where film was already a shrinking niche, betting on analog photography's enduring appeal among enthusiasts.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <div class="relative">
+                            <div class="polaroid">
+                                <img src="https://images.unsplash.com/photo-1524253482453-3fed5d3e1457?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                                     alt="Analog camera and digital camera comparison" 
+                                     class="w-full h-auto rounded-sm">
+                                <p class="text-center mt-2 text-gray-500">The shifting tides of photography</p>
+                            </div>
+                            <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 border-8 border-white shadow-md">
+                                <i class="fas fa-history text-4xl" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Boiled Frog Analysis -->
+        <section class="mb-20 bg-indigo-600 rounded-2xl overflow-hidden">
+            <div class="p-8 md:p-12 text-white">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                        <h2 class="text-2xl font-bold mb-4">The Boiled Frog Metaphor</h2>
+                        <div class="h-1 w-12 bg-indigo-300 mb-4"></div>
+                        <p class="opacity-90 mb-6">In strategic management, the "boiled frog" describes organizations that fail to recognize gradual environmental changes until it's too late to adapt.</p>
+                        
+                        <div class="bg-white bg-opacity-10 rounded-lg p-4">
+                            <h3 class="font-semibold text-lg mb-2 flex items-center">
+                                <i class="fas fa-thermometer-half mr-3 text-indigo-300" aria-hidden="true"></i>
+                                Indie Film Lab's Position
+                            </h3>
+                            <p class="opacity-90">They were near the boiled frog scenario—entering a declining market but recognizing the passionate niche that remained. Like joining vinyl records as streaming took over, they sensed the heat but bet on enthusiasts.</p>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="bg-white rounded-lg p-1 inline-block">
+                            <div class="relative w-full h-64 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-md overflow-hidden">
+                                <div class="absolute bottom-0 left-0 right-0 h-1/2 bg-indigo-100">
+                                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md">
+                                            <i class="fas fa-frog text-2xl text-indigo-600" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="absolute top-4 left-4 bg-white px-3 py-1 rounded-full shadow-sm text-sm font-medium text-indigo-600">
+                                    1990s: Digital emerges
+                                </div>
+                                <div class="absolute top-16 right-4 bg-white px-3 py-1 rounded-full shadow-sm text-sm font-medium text-indigo-600">
+                                    2000s: Digital improves
+                                </div>
+                                <div class="absolute bottom-16 left-4 bg-white px-3 py-1 rounded-full shadow-sm text-sm font-medium text-indigo-600">
+                                    2010s: Smartphones dominate
+                                </div>
+                                <div class="absolute bottom-4 right-4 bg-indigo-600 px-3 py-1 rounded-full shadow-sm text-sm font-medium text-white">
+                                    2011: Indie Film Lab founded
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Adaptation Strategies -->
+        <section class="mb-20 bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+            <div class="p-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Strategic Adaptation Approaches</h2>
+                <p class="text-gray-600 text-center max-w-3xl mx-auto mb-8">How Indie Film Lab effectively responded to digital disruption by focusing on their niche</p>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="flex items-start animate-fade-in" style="animation-delay: 0.1s">
+                        <div class="bg-indigo-100 text-indigo-600 rounded-lg p-3 mr-4 flex-shrink-0">
+                            <i class="fas fa-medal text-xl" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-2">Quality Focus</h3>
+                            <p class="text-gray-600">Doubled down on superior analog processing quality that digital couldn't replicate, appealing to professionals and enthusiasts who valued film's unique characteristics.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start animate-fade-in" style="animation-delay: 0.3s">
+                        <div class="bg-indigo-100 text-indigo-600 rounded-lg p-3 mr-4 flex-shrink-0">
+                            <i class="fas fa-handshake text-xl" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-2">Community Building</h3>
+                            <p class="text-gray-600">Created a passionate community around analog photography through workshops, social media engagement, and educational content.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start animate-fade-in" style="animation-delay: 0.5s">
+                        <div class="bg-indigo-100 text-indigo-600 rounded-lg p-3 mr-4 flex-shrink-0">
+                            <i class="fas fa-shopping-cart text-xl" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-2">Digital Integration</h3>
+                            <p class="text-gray-600">Embraced digital tools for ordering and distribution (through Indie Print Co.) while maintaining analog core services, creating a hybrid business model.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start animate-fade-in" style="animation-delay: 0.7s">
+                        <div class="bg-indigo-100 text-indigo-600 rounded-lg p-3 mr-4 flex-shrink-0">
+                            <i class="fas fa-bullseye text-xl" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-2">Niche Specialization</h3>
+                            <p class="text-gray-600">Focused on specific film types and processing techniques that large labs abandoned, becoming the go-to for these specialized services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Effectiveness Assessment -->
+        <section class="mb-12 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl overflow-hidden border border-indigo-100">
+            <div class="p-8 md:p-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Effectiveness Assessment</h2>
+                
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-white rounded-xl p-6 shadow-sm mb-8">
+                        <h3 class="font-semibold text-lg text-indigo-600 mb-3">Strategic Successes</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-2">✓</span>
+                                <span>Created a sustainable business in a declining market by focusing on quality and community</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-2">✓</span>
+                                <span>Leveraged digital tools to serve analog customers more effectively</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-2">✓</span>
+                                <span>Benefited from the "analog revival" trend among younger photographers</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <h3 class="font-semibold text-lg text-indigo-600 mb-3">Ongoing Challenges</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-2">!</span>
+                                <span>Market size remains limited by broader digital dominance</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-2">!</span>
+                                <span>Dependence on film manufacturers continuing production</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-2">!</span>
+                                <span>Balancing growth with maintaining quality and community feel</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Takeaways -->
+        <section class="mb-12 bg-indigo-600 rounded-2xl overflow-hidden">
+            <div class="p-8 md:p-12 text-white">
+                <h2 class="text-2xl font-bold mb-6 text-center">Strategic Management Takeaways</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white bg-opacity-10 rounded-xl p-6">
+                        <h3 class="font-semibold text-lg mb-3 flex items-center">
+                            <i class="fas fa-binoculars mr-3 text-indigo-300" aria-hidden="true"></i>
+                            Environmental Scanning
+                        </h3>
+                        <p class="opacity-90">Even in declining industries, opportunities exist for organizations that can accurately read environmental changes and identify resilient niches.</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 rounded-xl p-6">
+                        <h3 class="font-semibold text-lg mb-3 flex items-center">
+                            <i class="fas fa-chess-knight mr-3 text-indigo-300" aria-hidden="true"></i>
+                            Strategic Positioning
+                        </h3>
+                        <p class="opacity-90">Differentiation through quality and community can create defensible positions against technological disruption.</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 rounded-xl p-6">
+                        <h3 class="font-semibold text-lg mb-3 flex items-center">
+                            <i class="fas fa-random mr-3 text-indigo-300" aria-hidden="true"></i>
+                            Hybrid Adaptation
+                        </h3>
+                        <p class="opacity-90">Using new technologies to serve traditional markets can create innovative business models that honor the past while embracing the future.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-sm text-gray-500">
+            <div class="mb-4">
+                <a href="https://www.indiefilmlab.com/" 
+                   class="text-indigo-600 hover:text-indigo-800 font-medium" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                    <strong>Visit Indie Film Lab's Website</strong>
+                </a>
+            </div>
+            <p>Strategic Analysis | General Environment Impact Study | Prepared for Business Strategy Course</p>
+            <p class="mt-2">© 2023 Strategic Management Analysis, All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple animation trigger for scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedElements = document.querySelectorAll('.animate-fade-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, {threshold: 0.1});
+            
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
